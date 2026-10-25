@@ -5,7 +5,7 @@ from datetime import datetime
 class BankAccount:
     def __init__(self, account_holder, initial_balance=0.0):
         if initial_balance < 0:
-            raise ValueError("Initial balance cannot be negative.")
+            raise ValueError("Initial balance cannot be negative.  ")
 
         self.account_holder = account_holder
         self.balance = round(initial_balance, 2)
